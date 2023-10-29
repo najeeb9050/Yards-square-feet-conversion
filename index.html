@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marla To squrefeet</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Yard to Square Feet Converter</title>
 </head>
+
 <body>
     <div class="converter">
-        <h1>Yard to Square Feet Converter</h1>
-        <div class="input-container">
-            <label for="yard">Yard:</label>
-            <input type="number" id="yard" placeholder="Enter Yard">
-        </div>
-        <div class="result-container">
-            <label for="squareFeet">Square Feet:</label>
-            <span id="squareFeet">0</span>
-        </div>
-        <button id="convertButton">Convert</button>
-    </div>
+        <h2 style="color: rgb(173, 167, 167); text-align: center; letter-spacing: 6px;font-size: 25px;">
+            AREA CONVERTER
 
-    <script src="script.mjs"></script>
+        </h2>
+        <section class="container">
+            <input type="number" id="marla" oninput="marlaToFt()" />
+            <label for="marla">Marla</label>
+
+        </section>
+        <section class="container">
+            <input type="number" id="feet" oninput="ftToMarla()" />
+            <label for="feet">feet</label>
+
+        </section>
+        <script src="./script.mjs"></script>
+
+    </div>
 </body>
+
 </html>

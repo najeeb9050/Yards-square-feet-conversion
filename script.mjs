@@ -1,15 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const yardInput = document.getElementById("yard");
-    const squareFeetOutput = document.getElementById("squareFeet");
-    const convertButton = document.getElementById("convertButton");
+let marla = document.getElementById("marla");
+let feet = document.getElementById("feet");
 
-    convertButton.addEventListener("click", function () {
-        const yard = parseFloat(yardInput.value);
-        if (!isNaN(yard)) {
-            const squareFeet = yard * 9;
-            squareFeetOutput.textContent = squareFeet.toFixed(2);
-        } else {
-            squareFeetOutput.textContent = "Invalid input";
-        }
-    });
-});
+function marlaToFt() {
+    let output = (parseFloat(marla.value) * 272.251);
+    feet.value = parseFloat(output.toFixed(3));
+
+}
+
+function ftToMarla() {
+    let output = (parseFloat(feet.value) * 0.00367309);
+    marla.value = parseFloat(output.toFixed(3));
+
+}
